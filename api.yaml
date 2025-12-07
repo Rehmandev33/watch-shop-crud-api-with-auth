@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Watch Shop API
+  version: 1.0.0
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+paths:
+  /api/auth/register:
+    post:
+      summary: Register User
+      responses:
+        201:
+          description: Created
+  /api/watches:
+    get:
+      summary: Get All Watches
+      responses:
+        200:
+          description: Success
+    post:
+      summary: Create Watch
+      security:
+        - bearerAuth: []
+      responses:
+        201:
+          description: Created
