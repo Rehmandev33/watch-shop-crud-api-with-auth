@@ -1,4 +1,4 @@
-import Watch from '../model/watch.js';
+import Watch from '../models/watch.js';
 
 //GET ALL (Paginated)
 const getWatches = async (req, res) => {

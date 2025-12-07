@@ -5,7 +5,7 @@ import swaggerUi from 'swagger-ui-express';
 import yaml from 'yamljs';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authroutes.js';
-import watchRoutes from './routes/authroutes.js';
+import watchRoutes from './routes/watchroutes.js';
 
 dotenv.config();
 connectDB();

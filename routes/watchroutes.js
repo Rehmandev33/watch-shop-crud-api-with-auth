@@ -1,6 +1,6 @@
 import express from 'express';
 import { getWatches, getWatchById, createWatch, updateWatch, deleteWatch } from '../controllers/watchcontroller.js';
-import { protect } from '../middleware/authmiddle.js';
+import { protect } from '../middleware/authmiddleware.js';
 
 const router = express.Router();
 
